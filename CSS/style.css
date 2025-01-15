@@ -13,9 +13,12 @@
     transition: 0.2s linear;
     font-family: "Roboto", serif;
 }
+body{
+    overflow-x: hidden;
+}
 section{
     padding: 3rem 2rem;
-    margin: 0 5vw;
+    margin: 0 5vh;
     max-width: 1500px;
 }
 .logo img {
@@ -68,10 +71,13 @@ section{
 .btn:hover{
     letter-spacing: 0.1rem;
 }
+.homeContainer{
+    margin-top: 100px;
+}
 .homeContainer section {
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .content {
@@ -123,20 +129,46 @@ section{
     padding: 1rem 0;
     line-height: 1.5;
 }
+#produtos{
+    margin-bottom: 180px;
+}
 .pai-serviços{
-    background-color: black;
+    height: 200px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    gap: 10px 10px;
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px 20px;
 }
-.serviços{
-    display: block;
-    background-color: yellow;
+.filho-serviços{
+    border-radius: 0.5rem;
+    border: 0.1rem solid gray;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(1,200px);
+    gap: 20px 20px;
+}
+.img-serviços1{
+    background-image: url('/img/captiva.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-serviços2{
+    background-image: url('/img/direçãooo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-serviços3{
+    background-image: url('/img/Vedação.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 h4{
-    color: white;
-    font-size: 4rem;
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
 }
 #div{
     grid-column-start: 2;
@@ -210,9 +242,44 @@ h4{
 h5{
     font-size: 1.5rem;
 }
+@media screen and (max-width: 1600px) and (min-width:1100px){
+    .pai-serviços{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px 20px;
+}
+.filho-serviços{
+    border-radius: 0.5rem;
+    border: 0.1rem solid gray;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(1,200px);
+    gap: 20px 20px;
+}
+.img-serviços1{
+    background-image: url('/img/captiva.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-serviços2{
+    background-image: url('/img/direçãooo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-serviços3{
+    background-image: url('/img/vedaçao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
 @media screen and (max-width: 1100px) and (min-width:900px){
     .homeContainer{
-        margin-top:50px;
+        margin-top:100px;
     }
     #img{
         height: 500px;
@@ -618,4 +685,42 @@ h5{
         width:100px;
         height:100px;
     }
+}
+
+.hiddenRight{
+    transform: translateX(30%);
+    transition: all 1.7s;
+    filter: blur(15px);
+    opacity: 0;
+}
+
+.hiddenLeft{
+    transform: translateX(-30%);
+    transition: all 1.7s;
+    filter: blur(15px);
+    opacity: 0;
+}
+
+.show{
+    transform: translateX(0);
+    transition: all 1.7s;
+    filter: blur(0);
+    opacity: 1;
+}
+
+.box-container :nth-child(1){
+    transition-delay: 400ms;
+}
+
+.box-container :nth-child(2){
+    transition-delay: 700ms;
+}
+
+.box-container :nth-child(3){
+    transition-delay: 1000ms;
+}
+
+.credito{
+    background-color: #bb0b0b;
+    text-align: center;
 }
