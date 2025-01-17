@@ -148,22 +148,22 @@ section{
     gap: 20px 20px;
 }
 .img-serviços1{
-    background-image: url('/img/captiva.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/img/direçaohidro.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .img-serviços2{
-    background-image: url('/img/direçãooo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/img/direçaoeletrica.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .img-serviços3{
-    background-image: url('/img/Vedação.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/img/vedaçao.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h4{
     color: black;
@@ -244,46 +244,94 @@ h5{
 }
 @media screen and (max-width: 1600px) and (min-width:1100px){
     .pai-serviços{
-    height: 200px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 20px 20px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 20px;
+    }
+    .filho-serviços{
+        border-radius: 0.5rem;
+        border: 0.1rem solid gray;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: repeat(1,150px);
+    }
+    .img-serviços1{
+        background-image: url('/img/direçaohidro.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços2{
+        background-image: url('/img/direçaoeletrica.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços3{
+        background-image: url('/img/vedaçao.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .a{
+        height: 20px;
+    }
+    h4{
+        color: black;
+        font-size: 2.2rem;
+        text-align: center;
+    }
 }
-.filho-serviços{
-    border-radius: 0.5rem;
-    border: 0.1rem solid gray;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: repeat(1,200px);
-    gap: 20px 20px;
-}
-.img-serviços1{
-    background-image: url('/img/captiva.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.img-serviços2{
-    background-image: url('/img/direçãooo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.img-serviços3{
-    background-image: url('/img/vedaçao.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-}
-@media screen and (max-width: 1100px) and (min-width:900px){
+@media screen and (max-width: 1150px) and (min-width:900px){
     .homeContainer{
         margin-top:100px;
     }
     #img{
         height: 500px;
         width: 300px;
+    }
+    .pai-serviços{
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 20px;
+        margin-bottom: 330px;
+    }
+    .filho-serviços{
+        border-radius: 0.5rem;
+        border: 0.1rem solid gray;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: repeat(1,150px);
+    }
+    .img-serviços1{
+        background-image: url('/img/direçaohidro.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços2{
+        background-image: url('/img/direçaoeletrica.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços3{
+        background-image: url('/img/vedaçao.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .a{
+        height: 20px;
+    }
+    h4{
+        color: black;
+        font-size: 2.2rem;
+        text-align: center;
     }
     .review .box-container {
         display: grid;
@@ -436,9 +484,46 @@ h5{
         padding: 1rem 0;
         line-height: 1.5rem;
     }
+    .pai-serviços{
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 20px;
+        margin-bottom: 650px;
+    }
+    .filho-serviços{
+        border-radius: 0.5rem;
+        border: 0.1rem solid gray;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: repeat(1,150px);
+    }
+    .img-serviços1{
+        background-image: url('/img/direçaohidro.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços2{
+        background-image: url('/img/direçaoeletrica.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços3{
+        background-image: url('/img/vedaçao.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .a{
+        height: 20px;
+    }
     h4{
-        color: white;
-        font-size: 2rem;
+        color: black;
+        font-size: 2.2rem;
+        text-align: center;
     }
     #div{
         grid-column-start: 2;
@@ -607,9 +692,46 @@ h5{
         padding: 1rem 0;
         line-height: 1.4rem;
     }
+    .pai-serviços{
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 20px;
+        margin-bottom: 650px;
+    }
+    .filho-serviços{
+        border-radius: 0.5rem;
+        border: 0.1rem solid gray;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: repeat(1,150px);
+    }
+    .img-serviços1{
+        background-image: url('/img/direçaohidro.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços2{
+        background-image: url('/img/direçaoeletrica.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-serviços3{
+        background-image: url('/img/vedaçao.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .a{
+        height: 20px;
+    }
     h4{
-        color: white;
-        font-size: 2rem;
+        color: black;
+        font-size: 2.2rem;
+        text-align: center;
     }
     #div{
         grid-column-start: 2;
